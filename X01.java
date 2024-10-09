@@ -1,6 +1,5 @@
 // 12S24001-FredrickAritonang
 // 12S24019-Winda N.V Sitorus
-
 import java.util.*;
 import java.lang.Math;
 
@@ -29,7 +28,7 @@ public class X01 {
         } else {
             total2 = minimum;
         }
-        System.out.println(toFixed(total2,2));
+        System.out.println(toFixed(total1,2));
     }
     
     private static String toFixed(double value, int digits) {

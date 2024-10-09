@@ -4,9 +4,9 @@
         <attribute name="name" value="X.01"/>
         <attribute name="authors" value="VIVOBOOK"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-09 04:10:19 PM"/>
+        <attribute name="saved" value="2024-10-09 04:40:03 PM"/>
         <attribute name="created" value="VklWT0JPT0s7V0lOREE7MjAyNC0xMC0wOTswMzowOTozNiBQTTsyMjc3"/>
-        <attribute name="edited" value="VklWT0JPT0s7V0lOREE7MjAyNC0xMC0wOTswNDoxMDoxOSBQTTsyOzIzODA="/>
+        <attribute name="edited" value="VklWT0JPT0s7V0lOREE7MjAyNC0xMC0wOTswNDo0MDowMyBQTTszOzIzNzc="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -38,7 +38,7 @@
                     <assign variable="Total2" expression="Minimum"/>
                 </else>
             </if>
-            <output expression="ToFixed(Total2,2)" newline="True"/>
+            <output expression="ToFixed(Total1,2)" newline="True"/>
         </body>
     </function>
 </flowgorithm>
