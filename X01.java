@@ -1,5 +1,7 @@
 // 12S24001-FredrickAritonang
 // 12S24019-Winda N.V Sitorus
+
+
 import java.util.*;
 import java.lang.Math;
 
@@ -7,28 +9,29 @@ public class X01 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        double hargabuku, total1, minimum, total2;
+        double termurah, price, total;
 
-        hargabuku = 0;
-        total1 = 0;
-        minimum = 1000;
-        do {
-            hargabuku = Double.parseDouble(input.nextLine());
-            if (hargabuku == 0) {
+        total = 0;
+        termurah = 999;
+        price = Double.parseDouble(input.nextLine());
+        while (price != 0) {
+            if (price == 0) {
             } else {
-                if (minimum < hargabuku) {
+                if (price < termurah) {
+                    termurah = price;
                 } else {
-                    minimum = hargabuku;
+                    price = price;
                 }
-                total1 = total1 + hargabuku;
+                total = total + price;
             }
-        } while (hargabuku != 0);
-        if (total1 >= 100) {
-            total2 = total1 - minimum;
-        } else {
-            total2 = minimum;
+            price = Double.parseDouble(input.nextLine());
         }
-        System.out.println(toFixed(total1,2));
+        if (total >= 100) {
+            total = total - termurah;
+        } else {
+            total = total;
+        }
+        System.out.println(toFixed(total,2));
     }
     
     private static String toFixed(double value, int digits) {
